@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConquestRun</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="tabs">
+      <button onclick="showTab('mapa')">🗺️<br>Mapa</button>
+      <button onclick="showTab('perfil')">👤<br>Perfil</button>
+      <button onclick="showTab('ranking')">🏆<br>Ranking</button>
+      <button onclick="showTab('equipes')">👥<br>Equipes</button>
+    </nav>
+
+    <section id="mapa" class="tab active">
+      <h1>Mapa</h1>
+      <p>Aqui estará o mapa interativo do jogo.</p>
+    </section>
+
+    <section id="perfil" class="tab">
+      <h1>Perfil do Jogador</h1>
+      <p>Nome: PlayerXYZ</p>
+      <p>Hexágonos dominados: 120</p>
+      <p>Insígnias desbloqueadas: 8</p>
+    </section>
+
+    <section id="ranking" class="tab">
+      <h1>Ranking Global</h1>
+      <ol>
+        <li>Player1 - 300 pts</li>
+        <li>Player2 - 280 pts</li>
+        <li>PlayerXYZ - 250 pts</li>
+      </ol>
+    </section>
+
+    <section id="equipes" class="tab">
+      <h1>Equipes</h1>
+      <p>Nome da Equipe: Conquerors</p>
+      <p>Cor: Azul</p>
+
+      <h2>Eventos & Desafios</h2>
+      <div class="card">
+        <h3>Conquista em Santos</h3>
+        <p>Data: 05/09/2025</p>
+        <button onclick="participar('Santos')">Participar</button>
+      </div>
+      <div class="card">
+        <h3>Disputa no Anhangabaú</h3>
+        <p>Data: 12/09/2025</p>
+        <button onclick="participar('Anhangabaú')">Participar</button>
+      </div>
+      <div class="card">
+        <h3>Corrida no Rio de Janeiro</h3>
+        <p>Data: 20/09/2025</p>
+        <button onclick="participar('Rio de Janeiro')">Participar</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
